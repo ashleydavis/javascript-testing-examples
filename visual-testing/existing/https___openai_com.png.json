@@ -1,0 +1,13 @@
+{
+    "url": "https://openai.com",
+    "boundingBox": {
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 8850.375
+    },
+    "viewport": {
+        "width": 1024,
+        "height": 8860
+    }
+}
