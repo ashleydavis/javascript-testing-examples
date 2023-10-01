@@ -1,0 +1,36 @@
+<!-- 
+
+A simple HTML + JavaScript frontend created by ChatGPT. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple frontend</title>
+</head>
+<body>
+
+<h1>A simple frontend</h1>
+<button onclick="fetchGreeting()">Get Greeting</button>
+<p id="greetingMessage"></p>
+
+<script>
+    function fetchGreeting() {
+        // If you have a build process this will be injected.
+        const baseUrl = "http://localhost:3100"; 
+
+        fetch(`${baseUrl}/api/greeting`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('greetingMessage').textContent = data.message;
+            })
+            .catch(error => {
+                console.error('Error fetching the greeting:', error);
+            });
+    }
+</script>
+
+</body>
+</html>

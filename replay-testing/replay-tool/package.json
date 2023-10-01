@@ -1,0 +1,16 @@
+{
+    "name": "replay-tool",
+    "version": "1.0.0",
+    "description": "Runs recorded requests against the backend and compare its responses to the expected responses.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+    },
+    "dependencies": {
+        "axios": "^1.5.1"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}

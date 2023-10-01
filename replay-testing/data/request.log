@@ -1,0 +1,45 @@
+{
+  "type": "request",
+  "requestId": "2cafccf7-d10a-4511-9a3e-3a4e7a9873fc",
+  "timestamp": "2023-10-01T03:49:24.039Z",
+  "method": "GET",
+  "url": "/api/greeting",
+  "headers": {
+    "host": "localhost:3100",
+    "connection": "keep-alive",
+    "sec-ch-ua": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "accept": "*/*",
+    "origin": "http://127.0.0.1:8080",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://127.0.0.1:8080/",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-AU,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,la;q=0.6,pt;q=0.5"
+  },
+  "body": ""
+}
+======
+{
+  "type": "response",
+  "requestId": "2cafccf7-d10a-4511-9a3e-3a4e7a9873fc",
+  "timestamp": "2023-10-01T03:49:24.058Z",
+  "method": "GET",
+  "url": "/api/greeting",
+  "status": 200,
+  "headers": {
+    "x-powered-by": "Express",
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "37",
+    "etag": "W/\"25-EYJuBafUH9KeyfZtsQF22NJ0Tlc\"",
+    "date": "Sun, 01 Oct 2023 03:49:24 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "body": "{\"message\":\"Hello from the backend!\"}"
+}
+======
