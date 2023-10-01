@@ -1,9 +1,9 @@
 {
   "type": "request",
-  "requestId": "4bb5a6ce-75ce-4ed8-891d-25c0f17165a2",
-  "timestamp": "2023-10-01T08:03:17.583Z",
+  "requestId": "73b764ca-22a2-4541-9285-956ceeffcdaa",
+  "timestamp": "2023-10-01T08:06:48.882Z",
   "method": "POST",
-  "url": "/api/greeting",
+  "url": "/api/greeting?id=1234",
   "headers": {
     "host": "localhost:3100",
     "connection": "keep-alive",
@@ -27,10 +27,10 @@
 ======
 {
   "type": "response",
-  "requestId": "4bb5a6ce-75ce-4ed8-891d-25c0f17165a2",
-  "timestamp": "2023-10-01T08:03:17.695Z",
+  "requestId": "73b764ca-22a2-4541-9285-956ceeffcdaa",
+  "timestamp": "2023-10-01T08:06:48.942Z",
   "method": "POST",
-  "url": "/api/greeting",
+  "url": "/api/greeting?id=1234",
   "status": 200,
   "headers": {
     "x-powered-by": "Express",
@@ -38,7 +38,7 @@
     "content-type": "application/json; charset=utf-8",
     "content-length": "69",
     "etag": "W/\"45-HXDLBq1J/ncwrFsQ6/Ot3tR3zyE\"",
-    "date": "Sun, 01 Oct 2023 08:03:17 GMT",
+    "date": "Sun, 01 Oct 2023 08:06:48 GMT",
     "connection": "keep-alive",
     "keep-alive": "timeout=5"
   },
@@ -47,10 +47,10 @@
 ======
 {
   "type": "request",
-  "requestId": "99c71ca5-6266-4b21-b509-45fe5f3e5627",
-  "timestamp": "2023-10-01T08:03:20.343Z",
+  "requestId": "ee530df3-6cfd-4396-ba2a-07201a549198",
+  "timestamp": "2023-10-01T08:06:51.671Z",
   "method": "GET",
-  "url": "/api/greeting",
+  "url": "/api/greeting?id=1234",
   "headers": {
     "host": "localhost:3100",
     "connection": "keep-alive",
@@ -72,10 +72,10 @@
 ======
 {
   "type": "response",
-  "requestId": "99c71ca5-6266-4b21-b509-45fe5f3e5627",
-  "timestamp": "2023-10-01T08:03:20.361Z",
+  "requestId": "ee530df3-6cfd-4396-ba2a-07201a549198",
+  "timestamp": "2023-10-01T08:06:51.687Z",
   "method": "GET",
-  "url": "/api/greeting",
+  "url": "/api/greeting?id=1234",
   "status": 200,
   "headers": {
     "x-powered-by": "Express",
@@ -83,7 +83,7 @@
     "content-type": "application/json; charset=utf-8",
     "content-length": "25",
     "etag": "W/\"19-xiRlAiCAu+T5Wg8+Nm/uG4L47fI\"",
-    "date": "Sun, 01 Oct 2023 08:03:20 GMT",
+    "date": "Sun, 01 Oct 2023 08:06:51 GMT",
     "connection": "keep-alive",
     "keep-alive": "timeout=5"
   },

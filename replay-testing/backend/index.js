@@ -11,7 +11,9 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-let message = 'Hello from the backend!';
+let messages = {
+    '1234': 'Hello from the backend!',
+};
 
 app.get('/', (req, res) => {
     res.send('This is the backend!');
@@ -22,9 +24,9 @@ app.post('/api/greeting', (req, res) => {
     console.log(`HTTP POST /api/greeting from the frontend.`);
 
     const { message: newMessage } = req.body;
-    let prevMessage = message;
-    message = newMessage;
-    
+    let prevMessage = messages[req.query.id];
+    messages[req.query.id] = newMessage;
+
     res.json({ 
         prevMessage: prevMessage,
         newMesssage: newMessage,
@@ -35,7 +37,7 @@ app.get('/api/greeting', (req, res) => {
 
     console.log(`HTTP GET /api/greeting from the frontend.`);
 
-    res.json({ message: message });
+    res.json({ message: messages[req.query.id] });
 });
 
 app.listen(PORT, () => {

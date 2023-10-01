@@ -20,7 +20,7 @@ A simple HTML + JavaScript frontend created by ChatGPT.
     // If you have a build process this will be injected from an environment variable.
     const BASE_URL = "http://localhost:3100"; 
 
-    fetch(`${BASE_URL}/api/greeting`, { 
+    fetch(`${BASE_URL}/api/greeting?id=1234`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: 'Hello world' })
@@ -36,7 +36,7 @@ A simple HTML + JavaScript frontend created by ChatGPT.
 
     function fetchGreeting() {
 
-        fetch(`${BASE_URL}/api/greeting`, { method: 'GET' })
+        fetch(`${BASE_URL}/api/greeting?id=1234`, { method: 'GET' })
             .then(response => response.json())
             .then(data => {
                 document.getElementById('greetingMessage').textContent = data.message;
