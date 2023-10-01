@@ -17,11 +17,26 @@ A simple HTML + JavaScript frontend created by ChatGPT.
 <p id="greetingMessage"></p>
 
 <script>
-    function fetchGreeting() {
-        // If you have a build process this will be injected.
-        const baseUrl = "http://localhost:3100"; 
+    // If you have a build process this will be injected from an environment variable.
+    const BASE_URL = "http://localhost:3100"; 
 
-        fetch(`${baseUrl}/api/greeting`)
+    fetch(`${BASE_URL}/api/greeting`, { 
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: 'Hello world' })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(`Response from backend:`);
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error setting the greeting:', error);
+        });
+
+    function fetchGreeting() {
+
+        fetch(`${BASE_URL}/api/greeting`, { method: 'GET' })
             .then(response => response.json())
             .then(data => {
                 document.getElementById('greetingMessage').textContent = data.message;
