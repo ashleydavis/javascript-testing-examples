@@ -1,0 +1,12 @@
+{
+  "name": "traditional-automated-testing",
+  "version": "1.0.0",
+  "description": "A simple of example an automated test using Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
