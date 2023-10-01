@@ -12,7 +12,9 @@ Start the [./recorder-proxy](./recorder-proxy) in another terminal.
 
 Interact with the frontend and the requests and responses are recorded to the data file [./data/request.log](./data/request.log).
 
-Now stop the frontend and backend.
+Now stop everything.
 
-Use [./replay-tool](./replay-tool) to replay the requests to the backend and test that responses from the backend are correct.
+Start the backend again (you need it starting from the default state for the tests to pass).
+
+Then use [./replay-tool](./replay-tool) to replay the requests to the backend and test that responses from the backend are correct.
 
