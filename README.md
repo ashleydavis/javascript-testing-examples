@@ -1,6 +1,6 @@
 # javascript-testing-examples
 
-A collection of examples of automated testing with JavaScript.
+A collection of examples of efective testing techniques for JavaScript.
 
 Star and watch the repo to stay updated!
 
