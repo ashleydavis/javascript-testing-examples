@@ -26,6 +26,26 @@ function groupPeople(people) {
     return { results, groupCounts };
 }
 
+function main() {
+    const people = [
+        { name: 'Alice', age: 15 },
+        { name: 'Bob', age: 23 },
+        { name: 'Charlie', age: 35 },
+        { name: 'David', age: 40 },
+        { name: 'Eva', age: 29 },
+        { name: 'Frank', age: 50 },
+        { name: 'Grace', age: 22 }
+    ];
+    
+    const result = groupPeople(people);
+    console.log(JSON.stringify(result, null, 4));
+}
+
+
+if (require.main === module) {
+    main();
+}
+
 module.exports = {
     groupPeople,
 };

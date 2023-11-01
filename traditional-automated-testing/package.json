@@ -4,6 +4,7 @@
   "description": "A simple of example an automated test using Jest.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "dependencies": {
