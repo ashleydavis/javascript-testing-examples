@@ -1,62 +1,15 @@
 {
   "type": "request",
-  "requestId": "73b764ca-22a2-4541-9285-956ceeffcdaa",
-  "timestamp": "2023-10-01T08:06:48.882Z",
-  "method": "POST",
-  "url": "/api/greeting?id=1234",
-  "headers": {
-    "host": "localhost:3100",
-    "connection": "keep-alive",
-    "content-length": "25",
-    "sec-ch-ua": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
-    "sec-ch-ua-platform": "\"Windows\"",
-    "sec-ch-ua-mobile": "?0",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
-    "content-type": "application/json",
-    "accept": "*/*",
-    "origin": "http://127.0.0.1:8080",
-    "sec-fetch-site": "cross-site",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-dest": "empty",
-    "referer": "http://127.0.0.1:8080/",
-    "accept-encoding": "gzip, deflate, br",
-    "accept-language": "en-AU,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,la;q=0.6,pt;q=0.5"
-  },
-  "body": "{\"message\":\"Hello world\"}"
-}
-======
-{
-  "type": "response",
-  "requestId": "73b764ca-22a2-4541-9285-956ceeffcdaa",
-  "timestamp": "2023-10-01T08:06:48.942Z",
-  "method": "POST",
-  "url": "/api/greeting?id=1234",
-  "status": 200,
-  "headers": {
-    "x-powered-by": "Express",
-    "access-control-allow-origin": "*",
-    "content-type": "application/json; charset=utf-8",
-    "content-length": "69",
-    "etag": "W/\"45-HXDLBq1J/ncwrFsQ6/Ot3tR3zyE\"",
-    "date": "Sun, 01 Oct 2023 08:06:48 GMT",
-    "connection": "keep-alive",
-    "keep-alive": "timeout=5"
-  },
-  "body": "{\"prevMessage\":\"Hello from the backend!\",\"newMesssage\":\"Hello world\"}"
-}
-======
-{
-  "type": "request",
-  "requestId": "ee530df3-6cfd-4396-ba2a-07201a549198",
-  "timestamp": "2023-10-01T08:06:51.671Z",
+  "requestId": "bf92c2e3-0d5a-49d4-a2b1-a6d9333ebc02",
+  "timestamp": "2023-11-01T22:24:48.446Z",
   "method": "GET",
   "url": "/api/greeting?id=1234",
   "headers": {
     "host": "localhost:3100",
     "connection": "keep-alive",
-    "sec-ch-ua": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\"",
+    "sec-ch-ua": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
     "sec-ch-ua-mobile": "?0",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
     "sec-ch-ua-platform": "\"Windows\"",
     "accept": "*/*",
     "origin": "http://127.0.0.1:8080",
@@ -72,8 +25,8 @@
 ======
 {
   "type": "response",
-  "requestId": "ee530df3-6cfd-4396-ba2a-07201a549198",
-  "timestamp": "2023-10-01T08:06:51.687Z",
+  "requestId": "bf92c2e3-0d5a-49d4-a2b1-a6d9333ebc02",
+  "timestamp": "2023-11-01T22:24:48.459Z",
   "method": "GET",
   "url": "/api/greeting?id=1234",
   "status": 200,
@@ -81,12 +34,12 @@
     "x-powered-by": "Express",
     "access-control-allow-origin": "*",
     "content-type": "application/json; charset=utf-8",
-    "content-length": "25",
-    "etag": "W/\"19-xiRlAiCAu+T5Wg8+Nm/uG4L47fI\"",
-    "date": "Sun, 01 Oct 2023 08:06:51 GMT",
+    "content-length": "37",
+    "etag": "W/\"25-EYJuBafUH9KeyfZtsQF22NJ0Tlc\"",
+    "date": "Wed, 01 Nov 2023 22:24:48 GMT",
     "connection": "keep-alive",
     "keep-alive": "timeout=5"
   },
-  "body": "{\"message\":\"Hello world\"}"
+  "body": "{\"message\":\"Hello from the backend!\"}"
 }
 ======
