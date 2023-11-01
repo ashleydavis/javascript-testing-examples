@@ -10,7 +10,11 @@ async function makeScreenshot(url, outputFile) {
 
     // https://dev.to/sagar/how-to-capture-screenshots-with-puppeteer-3mb2
     // https://stackoverflow.com/a/55302448/25868
-    const browser = await puppeteer.launch({ headless: true, defaultViewport: null });
+    //
+    // Note that I've disabled headless mode here just for demonstration purposes.
+    // Normally you'd want to run this with headless set to true.
+    //
+    const browser = await puppeteer.launch({ headless: false, defaultViewport: null });
 
     const page = await browser.newPage();
 
