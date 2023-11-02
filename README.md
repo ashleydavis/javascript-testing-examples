@@ -8,7 +8,7 @@ Star and watch the repo to stay updated!
 
 | Example | Description |
 | ------- | ----------- |
-| [output-testing](./output-testing) | An example of simple but powerful testing by checking for change in the output of a program. |
+| [output-testing](./output-testing) | An example of simple but powerful testing by checking for changes in the output of a program. |
 | [replay-testing](./replay-testing) | An example of recording and replaying HTTP tests for use in automated testing. |
 | [traditional-automated-testing](./traditional-automated-testing) | A simple example of an automated test using Jest. |
 | [ui-testing](./ui-testing) | An example of automated UI testing using Playwright. |
