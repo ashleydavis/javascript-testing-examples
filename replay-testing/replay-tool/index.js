@@ -63,6 +63,12 @@ async function replayRequest(requestDetails) {
     delete modifiedHeaders["if-modified-since"];
     delete modifiedHeaders["last-modified"];
 
+    console.log(`Making HTTP ${method} request to ${url}`);
+    console.log(`Headers:`);
+    console.log(modifiedHeaders);
+    console.log(`Body:`);
+    console.log(body);
+
     const response = await axios({
         method: method,
         url: `${TARGET_DOMAIN}${url}`,
