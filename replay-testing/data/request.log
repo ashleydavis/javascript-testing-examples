@@ -1,7 +1,54 @@
 {
   "type": "request",
-  "requestId": "bf92c2e3-0d5a-49d4-a2b1-a6d9333ebc02",
-  "timestamp": "2023-11-01T22:24:48.446Z",
+  "requestId": "f569acda-c064-4704-a0bc-a1a79c9ffa61",
+  "timestamp": "2023-11-03T04:16:05.877Z",
+  "method": "POST",
+  "url": "/api/greeting?id=1234",
+  "headers": {
+    "host": "localhost:3100",
+    "connection": "keep-alive",
+    "content-length": "25",
+    "sec-ch-ua": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-ch-ua-mobile": "?0",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "content-type": "application/json",
+    "accept": "*/*",
+    "origin": "http://127.0.0.1:8080",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-dest": "empty",
+    "referer": "http://127.0.0.1:8080/",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-AU,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,la;q=0.6,pt;q=0.5"
+  },
+  "body": "{\"message\":\"Hello world\"}"
+}
+======
+{
+  "type": "response",
+  "requestId": "f569acda-c064-4704-a0bc-a1a79c9ffa61",
+  "timestamp": "2023-11-03T04:16:05.905Z",
+  "method": "POST",
+  "url": "/api/greeting?id=1234",
+  "status": 200,
+  "headers": {
+    "x-powered-by": "Express",
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "69",
+    "etag": "W/\"45-HXDLBq1J/ncwrFsQ6/Ot3tR3zyE\"",
+    "date": "Fri, 03 Nov 2023 04:16:05 GMT",
+    "connection": "keep-alive",
+    "keep-alive": "timeout=5"
+  },
+  "body": "{\"prevMessage\":\"Hello from the backend!\",\"newMesssage\":\"Hello world\"}"
+}
+======
+{
+  "type": "request",
+  "requestId": "1cc7f92a-0144-4ab1-9d77-2268055928e1",
+  "timestamp": "2023-11-03T04:16:15.254Z",
   "method": "GET",
   "url": "/api/greeting?id=1234",
   "headers": {
@@ -25,8 +72,8 @@
 ======
 {
   "type": "response",
-  "requestId": "bf92c2e3-0d5a-49d4-a2b1-a6d9333ebc02",
-  "timestamp": "2023-11-01T22:24:48.459Z",
+  "requestId": "1cc7f92a-0144-4ab1-9d77-2268055928e1",
+  "timestamp": "2023-11-03T04:16:15.257Z",
   "method": "GET",
   "url": "/api/greeting?id=1234",
   "status": 200,
@@ -34,12 +81,12 @@
     "x-powered-by": "Express",
     "access-control-allow-origin": "*",
     "content-type": "application/json; charset=utf-8",
-    "content-length": "37",
-    "etag": "W/\"25-EYJuBafUH9KeyfZtsQF22NJ0Tlc\"",
-    "date": "Wed, 01 Nov 2023 22:24:48 GMT",
+    "content-length": "25",
+    "etag": "W/\"19-xiRlAiCAu+T5Wg8+Nm/uG4L47fI\"",
+    "date": "Fri, 03 Nov 2023 04:16:15 GMT",
     "connection": "keep-alive",
     "keep-alive": "timeout=5"
   },
-  "body": "{\"message\":\"Hello from the backend!\"}"
+  "body": "{\"message\":\"Hello world\"}"
 }
 ======
