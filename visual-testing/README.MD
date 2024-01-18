@@ -20,9 +20,12 @@ const urls = [
 
 ## Setup
 
-Open a terminal, change to the `visual-testing` directory and installed dependencies:
+
+Open a terminal, clone the repository, change to the directory and install dependencies:
 
 ```bash
+git clone git@github.com:ashleydavis/javascript-testing-examples.git
+cd javascript-testing-examples
 cd visual-testing
 npm install
 ```
